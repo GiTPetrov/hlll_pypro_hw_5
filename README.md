@@ -1,1 +1,2 @@
-# hlll_pypro_hw_5
+# Hillel: Python PRO: HW_5
+Django Project
