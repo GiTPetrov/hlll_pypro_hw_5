@@ -21,4 +21,4 @@ jobs:
 workflows:
   run tests:
     jobs:
-      - flake8 and manage_py_test
+      - flake_test
