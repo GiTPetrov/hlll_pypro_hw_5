@@ -1,0 +1,128 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$lNcXjdSUHnGEyjCQ9MJkgc$DyZjApR91byUooB4MUMCqq0YNchPb361Ss1YxyUWFd8=",
+        "last_login": "2022-07-08T13:33:23.879Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@ukr.net",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:32:43.957Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$XPXCqovCynoeD2F15uC6be$sYCCv+AKbkmhMo0AKzyQUcOX4GMJqhzTpWqY6u9T+As=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "brandon_39",
+        "first_name": "Brandon",
+        "last_name": "Hernandez",
+        "email": "brandon.hernandez@bolton-silva.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:12.858Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$tyQQqhcGLMct67A2sDMwLY$smnh5gLoLw37BbNJfSyalTIL1ZpoIKHm06rw5UJvUfA=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "mia_1588",
+        "first_name": "Mia",
+        "last_name": "Allen",
+        "email": "mia.allen@cobb.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:13.068Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$WuvZctcuh2veux3rD7ZGJh$e3S/uMTulAr/4VJtbTO+jYMAJ275Fek1TUqjYAkGwas=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ronnie_1030",
+        "first_name": "Ronnie",
+        "last_name": "Washington",
+        "email": "ronnie.washington@green.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:13.281Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$abvPADWRx5K0rgUagtPwn5$sJM59RTJFYHvlEyFwlIrAxw5ag/YLZPeElMSahimCok=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "brian_1297",
+        "first_name": "Brian",
+        "last_name": "Thompson",
+        "email": "brian.thompson@green-warner.biz",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:13.491Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$zPi6xSDHOpB1aqDSJZvJaH$1v1dnsNlBXCW7940xkIF4cYu2PkbBvFC35VnfkeY+us=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "random_user_FLvmn6ss0V",
+        "first_name": "",
+        "last_name": "",
+        "email": "random_user_FLvmn6ss0V@ukr.net",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:32.669Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$PDohVDAkVmLy1mNHodlsKA$3IrHU6Ee+wDFrrJW+6kzwmJNbEbB0TjpgBQ2RNTdKU4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "random_user_Z5BOg2idfl",
+        "first_name": "",
+        "last_name": "",
+        "email": "random_user_Z5BOg2idfl@ukr.net",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-08T13:34:32.884Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
