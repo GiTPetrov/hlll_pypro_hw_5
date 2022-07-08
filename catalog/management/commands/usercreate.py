@@ -1,15 +1,17 @@
+import random
+
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import User
 from django.core.management.base import BaseCommand
+
 from faker import Faker
-import random
 
 
 fake = Faker()
 
 
 class Command(BaseCommand):
-    help = 'Create some random users'
+    help = 'Create some random users'  # noqa: A003
 
     def add_arguments(self, parser):
         parser.add_argument(

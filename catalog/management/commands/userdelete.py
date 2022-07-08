@@ -1,16 +1,17 @@
 from django.contrib.auth.models import User
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = 'Delete one or more of the specified users'
+    help = 'Delete one or more of the specified users'  # noqa: A003
 
     def add_arguments(self, parser):
         parser.add_argument(
             'usr_id',
             nargs='+',
             type=int,
-            help='Sets the list of user ids to be deleted without superusers')
+            help='Sets the list of user ids to be deleted without superusers'
+        )
 
         parser.add_argument(
             '-s', '--super',
@@ -34,4 +35,3 @@ class Command(BaseCommand):
                 return self.stdout.write(self.style.ERROR(f"ERROR: These id's belong to superusers: {check_superuser}"))
             else:
                 user_filtered_list.delete()
-
