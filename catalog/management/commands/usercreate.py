@@ -39,7 +39,7 @@ class Command(BaseCommand):
                 if User.objects.filter(username=usr_name).exists() is False:
                     break
             if options['super']:
-                is_super = random.randrange(0, 2)
+                is_super = bool(random.getrandbits(1))
             else:
                 is_super = 0
             passwrd = make_password(f'{frst_name[0:3]}{lst_name[0:3]}123')
