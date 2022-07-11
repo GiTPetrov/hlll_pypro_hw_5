@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle form</title>
+</head>
+<body>
+    <h1>Triangle form</h1>
+    <p><a href="{% url 'index' %}">Home</a></p>
+    {% if hypothesis %}
+    <h2>Hypothesis = {{ hypothesis }}</h2>
+    {% endif %}
+    <form action="{% url 'triangle:triangle-form' %}" method="get">
+        {% csrf_token %}
+        {{ get_trngl_form.as_p }}
+        <input type="submit" name="calculate" value="Calculate">
+    </form>
+</body>
+</html>
