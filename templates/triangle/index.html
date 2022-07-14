@@ -5,7 +5,13 @@
     <title>Triangles</title>
 </head>
 <body>
-    <p>Hello, Hillel Homeworks</p>
-    <p><a href="{% url 'triangle:triangle-form' %}">HW8: Triangle form</a></p>
+    <h1>Hello, Hillel Homeworks</h1>
+    <h2>HW_8: Triangle</h2>
+        <p><a href="{% url 'triangle:triangle-form' %}">Triangle</a></p>
+    <h2>HW_9: Catalog</h2>
+        <p><a href="{% url 'catalog:index' %}">Catalog</a></p>
+    <h2>HW_10: Person</h2>
+        <p><a href="{% url 'triangle:person-form' %}">Person</a></p>
+        <p><a href="{% url 'triangle:person-list' %}">Person list</a></p>
 </body>
 </html>

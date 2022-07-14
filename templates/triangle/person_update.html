@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person</title>
+</head>
+<body>
+  <h1>Update Person: {{ person.first_name }} {{ person.last_name }}</h1>
+  <p><a href="{% url 'triangle:index' %}">Home</a></p>
+  <p><a href="{% url 'triangle:person-list' %}">Person list</a></p>
+
+    <form action="{% url 'triangle:person-update-form' pk=person.pk %}" method="post">
+        {% csrf_token %}
+        {{ formset.as_p }}
+        <input type="submit" name="Save" value="Save">
+    </form>
+</body>
+</html>
