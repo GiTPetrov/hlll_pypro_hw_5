@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect, render
 
-from triangle.forms import TriangleForm
+from triangle.forms import PersonForm, TriangleForm
+from triangle.models import Person
 
 
 def index(request):
@@ -25,3 +26,44 @@ def trngl_form(request):
             'hypothesis': hypo,
         }
     )
+
+
+def person_form(request):
+    if request.method == 'POST':
+        pers_form = PersonForm(request.POST)
+        if pers_form.is_valid():
+            pers_form.save()
+            return redirect('triangle:person-list')
+    else:
+        pers_form = PersonForm()
+    return render(
+        request,
+        'triangle/person.html',
+        {
+            'formset': pers_form
+        }
+    )
+
+
+def person_update_form(request, pk):
+    person = get_object_or_404(Person, pk=pk)
+    if request.method == 'POST':
+        pers_form = PersonForm(request.POST, instance=person)
+        if pers_form.is_valid():
+            pers_form.save()
+            return redirect('triangle:person-list')
+    else:
+        pers_form = PersonForm(instance=person)
+    return render(
+        request,
+        "triangle/person_update.html",
+        {
+            'formset': pers_form,
+            'person': person
+        }
+    )
+
+
+def person_list(request):
+    person_queryset = Person.objects.all()
+    return render(request, 'triangle/person_list.html', {'persons': person_queryset})
