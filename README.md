@@ -1,3 +1,6 @@
+# Hillel: Python PRO: HW_11
+Middleware, ModelAdmin
+
 # Hillel: Python PRO: HW_10
 Django model form
 
