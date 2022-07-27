@@ -1,0 +1,483 @@
+[
+{
+    "model": "catalog.propertyname",
+    "pk": 1,
+    "fields": {
+        "property_name": "Color"
+    }
+},
+{
+    "model": "catalog.propertyname",
+    "pk": 2,
+    "fields": {
+        "property_name": "Fastening"
+    }
+},
+{
+    "model": "catalog.properties",
+    "pk": 1,
+    "fields": {
+        "name": 1,
+        "property_value": "Red"
+    }
+},
+{
+    "model": "catalog.properties",
+    "pk": 2,
+    "fields": {
+        "name": 1,
+        "property_value": "Green"
+    }
+},
+{
+    "model": "catalog.properties",
+    "pk": 3,
+    "fields": {
+        "name": 1,
+        "property_value": "Blue"
+    }
+},
+{
+    "model": "catalog.properties",
+    "pk": 4,
+    "fields": {
+        "name": 2,
+        "property_value": "Floor"
+    }
+},
+{
+    "model": "catalog.properties",
+    "pk": 5,
+    "fields": {
+        "name": 2,
+        "property_value": "Wall"
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 1,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee665-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Red, Floor",
+        "properties": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 2,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee664-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Red, Wall",
+        "properties": [
+            1,
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 3,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee667-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Green, Floor",
+        "properties": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 4,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee666-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Green, Wall",
+        "properties": [
+            2,
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 5,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee669-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Blue, Floor",
+        "properties": [
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "catalog.propertyset",
+    "pk": 6,
+    "fields": {
+        "exchange_id": "fe94acff-3179-11ea-a455-20cf3076e2c6#910ee668-4889-11eb-a517-20cf3076e2c6",
+        "property_set_name": "Blue, Wall",
+        "properties": [
+            3,
+            5
+        ]
+    }
+},
+{
+    "model": "catalog.featurename",
+    "pk": 1,
+    "fields": {
+        "exchange_id": "7a5b2efa-1abc-11eb-a510-20cf3076e2c6",
+        "feature_name": "Height"
+    }
+},
+{
+    "model": "catalog.featurename",
+    "pk": 2,
+    "fields": {
+        "exchange_id": "7a5b2f16-1abc-11eb-a510-20cf3076e2c6",
+        "feature_name": "Length"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 1,
+    "fields": {
+        "name": 1,
+        "feature_value": "140"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 2,
+    "fields": {
+        "name": 1,
+        "feature_value": "160"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 3,
+    "fields": {
+        "name": 1,
+        "feature_value": "50"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 4,
+    "fields": {
+        "name": 2,
+        "feature_value": "40"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 5,
+    "fields": {
+        "name": 2,
+        "feature_value": "50"
+    }
+},
+{
+    "model": "catalog.features",
+    "pk": 6,
+    "fields": {
+        "name": 2,
+        "feature_value": "60"
+    }
+},
+{
+    "model": "catalog.inventories",
+    "pk": 1,
+    "fields": {
+        "exchange_id": "DEC1404",
+        "inventory_name": "DEC14/040",
+        "group": 6,
+        "vendor_codes": 1,
+        "features": [
+            1,
+            4
+        ],
+        "property_set": [
+            2,
+            4,
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.inventories",
+    "pk": 2,
+    "fields": {
+        "exchange_id": "DEC1605",
+        "inventory_name": "DEC16/050",
+        "group": 6,
+        "vendor_codes": 2,
+        "features": [
+            2,
+            5
+        ],
+        "property_set": [
+            2,
+            4,
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.inventories",
+    "pk": 3,
+    "fields": {
+        "exchange_id": "DEC1606",
+        "inventory_name": "DEC16/060",
+        "group": 6,
+        "vendor_codes": 3,
+        "features": [
+            2,
+            6
+        ],
+        "property_set": [
+            2,
+            4,
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.inventories",
+    "pk": 4,
+    "fields": {
+        "exchange_id": "R0506",
+        "inventory_name": "R5/060",
+        "group": 4,
+        "vendor_codes": 4,
+        "features": [
+            3,
+            6
+        ],
+        "property_set": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "catalog.vendorcodes",
+    "pk": 1,
+    "fields": {
+        "vendor_code_company": "1404",
+        "vendor_code_supplier": "0414"
+    }
+},
+{
+    "model": "catalog.vendorcodes",
+    "pk": 2,
+    "fields": {
+        "vendor_code_company": "1605",
+        "vendor_code_supplier": "0516"
+    }
+},
+{
+    "model": "catalog.vendorcodes",
+    "pk": 3,
+    "fields": {
+        "vendor_code_company": "1606",
+        "vendor_code_supplier": "0616"
+    }
+},
+{
+    "model": "catalog.vendorcodes",
+    "pk": 4,
+    "fields": {
+        "vendor_code_company": "0506",
+        "vendor_code_supplier": "0605"
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 1,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 1,
+        "path_length": 0
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 2,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 2,
+        "path_length": 1
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 3,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 3,
+        "path_length": 1
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 4,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 4,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 5,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 5,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 6,
+    "fields": {
+        "ancestor": 1,
+        "descendant": 6,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 7,
+    "fields": {
+        "ancestor": 2,
+        "descendant": 2,
+        "path_length": 1
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 8,
+    "fields": {
+        "ancestor": 2,
+        "descendant": 4,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 9,
+    "fields": {
+        "ancestor": 2,
+        "descendant": 5,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 10,
+    "fields": {
+        "ancestor": 2,
+        "descendant": 6,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 11,
+    "fields": {
+        "ancestor": 3,
+        "descendant": 3,
+        "path_length": 1
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 12,
+    "fields": {
+        "ancestor": 4,
+        "descendant": 4,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 13,
+    "fields": {
+        "ancestor": 5,
+        "descendant": 5,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.grouppath",
+    "pk": 14,
+    "fields": {
+        "ancestor": 6,
+        "descendant": 6,
+        "path_length": 2
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 1,
+    "fields": {
+        "exchange_id": "ebcdff58-2fb8-11ea-a450-20cf3076e2c6",
+        "group_name": "Heaters",
+        "parent": null
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 2,
+    "fields": {
+        "exchange_id": "6b616b2f-31ee-11ea-a456-20cf3076e2c6",
+        "group_name": "Wall heaters",
+        "parent": 1
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 3,
+    "fields": {
+        "exchange_id": "99e8dc07-edb6-11ea-a501-20cf3076e2c6",
+        "group_name": "Underfloor trench heaters",
+        "parent": 1
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 4,
+    "fields": {
+        "exchange_id": "6b616b34-31ee-11ea-a456-20cf3076e2c6",
+        "group_name": "Regullus",
+        "parent": 2
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 5,
+    "fields": {
+        "exchange_id": "9fevew32-31ee-11ea-a456-20cf3076e2c6",
+        "group_name": "Sollarius",
+        "parent": 2
+    }
+},
+{
+    "model": "catalog.group",
+    "pk": 6,
+    "fields": {
+        "exchange_id": "18rt8wer1-31ee-11ea-a456-20cf3076e2c6",
+        "group_name": "Decor",
+        "parent": 2
+    }
+}
+]
