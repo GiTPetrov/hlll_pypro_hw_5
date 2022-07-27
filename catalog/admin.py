@@ -1,6 +1,7 @@
-from django.contrib import admin
+from catalog.models import FeatureName, Features, Group, GroupPath, Inventories
+from catalog.models import Properties, PropertyName, PropertySet, VendorCodes
 
-from catalog.models import Group, GroupPath, Inventories, FeatureName, Features, Properties, PropertyName, PropertySet, VendorCodes
+from django.contrib import admin
 
 
 class GroupPathInline(admin.TabularInline):

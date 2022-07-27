@@ -68,18 +68,42 @@ class VendorCodes(models.Model):
 
 
 class GroupPath(models.Model):
-    ancestor = models.ForeignKey('Group', null=True, db_column='ancestor', blank=True, related_name="ancestor", on_delete=models.CASCADE)
-    descendant = models.ForeignKey('Group', null=True, db_column='descendant', blank=True, related_name="descendants", on_delete=models.CASCADE)
+    ancestor = models.ForeignKey(
+        'Group',
+        null=True,
+        db_column='ancestor',
+        blank=True,
+        related_name="ancestor",
+        on_delete=models.CASCADE
+    )
+    descendant = models.ForeignKey(
+        'Group',
+        null=True,
+        db_column='descendant',
+        blank=True,
+        related_name="descendants",
+        on_delete=models.CASCADE
+    )
     path_length = models.IntegerField(null=True, db_column='PathLength', blank=True)
 
     class Meta:
         db_table = u'GroupPath'
 
+    def __str__(self):
+        return f'ancestor: {self.ancestor}, descendant: {self.descendant}, path_length: {self.path_length}'
+
 
 class Group(models.Model):
     exchange_id = models.CharField(max_length=200)
     group_name = models.CharField(max_length=200)
-    parent = models.ForeignKey('self', null=True, blank=True, default=None, related_name='children', on_delete=models.CASCADE)
+    parent = models.ForeignKey(
+        'self',
+        null=True,
+        blank=True,
+        default=None,
+        related_name='children',
+        on_delete=models.CASCADE
+    )
     group_path = models.ManyToManyField('Group', through='GroupPath', through_fields=('ancestor', 'descendant'))
 
     class Meta:
