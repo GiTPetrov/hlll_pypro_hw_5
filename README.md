@@ -1,3 +1,8 @@
+# Hillel: Python PRO: HW_9
+OneToOneField, ForeignKey, ManyToManyField
+
+![img.png](img.png)
+
 # Hillel: Python PRO: HW_11
 Middleware, ModelAdmin
 
